@@ -1,5 +1,5 @@
 # python-calendarific
-Official Python library for Calendarific Global Holiday API
+Official Python library for [Calendarific](https://calendarific.com) Global Holiday API
 
 ## Installation
 
