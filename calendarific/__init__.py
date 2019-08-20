@@ -17,7 +17,7 @@ class v2:
         data     = json.loads(response.text)
 
         if response.status_code != 200:
-            if data.has_key('error') is False:
+            if 'error' not in data:
                 data['error'] = 'Unknown error.'
 
         return data
