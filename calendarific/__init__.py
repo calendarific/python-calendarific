@@ -10,7 +10,7 @@ class v2:
     def holidays(self, parameters):
         url = 'https://calendarific.com/api/v2/holidays?'
 
-        if parameters.has_key('api_key') is False:
+        if 'api_key' not in parameters:
             parameters['api_key'] = self.api_key
 
         response = requests.get(url, params=parameters);
